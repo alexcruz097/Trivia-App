@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'MuseoModerno', cursive;
+}
+
+header,
+#questions {
+    color: #CD7A00;
+}
+
+/* change the font */
+#category,
+#difficult {
+    font-family: sans-serif;
+}
+
+/*============== navbar ============================*/
+nav {
+    background-color: aqua;
+}
+
+.navBar {
+    color: rgb(43, 39, 39)
+}
+
+.navBar {
+    align-items: center;
+    list-style: none;
+    font-size: 40px;
+    padding-top: 30px;
+
+}
+
+/* dropdown menu */
+select {
+    font-size: 20px;
+}
+
+/* Whole container */
+.content,
+.questionContainer,
+.navBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+/*============== Answers  ============================*/
+.answers {
+    display: flex;
+    flex-direction: column;
+}
+
+/* answers div */
+.btn {
+    font-size: 20px;
+    border: none;
+    border-bottom: 3px solid #CD7A00;
+    padding: 12px 0px;
+    transition: all .3s;
+    margin: 12px 0px;
+    color: rgb(43, 39, 39)
+}
+
+
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* right or wrong display */
+.result {
+    font-size: 32px;
+}
+
+/*==========counter of the number of right and wrong answersd==========*/
+#rigthAnsw {
+    color: green;
+    margin-right: 15px;
+}
+
+#wrongAnsw {
+    color: red;
+    margin-left: 15px;
+}
+
+/* generate questions: button */
+#createQuestion {
+    outline: none;
+    padding: 10px 44px;
+    font-size: 25px;
+    margin: 12px 0px;
+    border: none;
+    color: black;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 1.4s;
+}
+
+#createQuestion:hover {
+    cursor: pointer;
+    background-color: aqua;
+
+    transform: skewX(12deg) scale(1.1);
+}
+
+/* this are the classes that I use in my JavaScript */
+.right {
+    background-color: green;
+
+}
+
+.wrong {
+    background-color: red;
+}
+
+.crossClass {
+    text-decoration: line-through;
+    transition: all 1s;
+}
+
+/* media Queries */
+@media(min-width: 800px) {
+    .answers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        margin: 22px 0px;
+    }
+}
