@@ -1,6 +1,5 @@
 const generateBTN = document.querySelector("#createQuestion");
 const category = document.querySelector("#category");
-
 const questionContainer = document.querySelector(".questionContainer");
 const body = document.querySelector("body");
 const categoryOption = document.querySelector(".categoryOption");
