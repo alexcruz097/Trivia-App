@@ -7,130 +7,154 @@
 
 body {
     font-family: 'MuseoModerno', cursive;
+    background-color: #e0ece4;
+    line-height: 1.3;
 }
 
-header,
-#questions {
-    color: #CD7A00;
+header {
+    color: #056674;
 }
 
-/* change the font */
-#category,
-#difficult {
-    font-family: sans-serif;
-}
+
+
 
 /*============== navbar ============================*/
 nav {
-    background-color: aqua;
+    background-color: #056674;
 }
 
 .navBar {
-    color: rgb(43, 39, 39)
-}
-
-.navBar {
+    color: #e0ece4;
     align-items: center;
     list-style: none;
-    font-size: 40px;
-    padding-top: 30px;
-
+    font-size: 25px;
+    padding: 12px 0px;
+    align-items: center;
+    font-weight: 200;
 }
 
 /* dropdown menu */
 select {
-    font-size: 20px;
+    font-size: 17px;
+    background-color: #e0ece4;
 }
 
-/* Whole container */
+/*~~~~~~~~~~~~~~~~~~~~~~~ style for the content of the page ~~~~~~~~~~~~~~~~~~~~~*/
+.content {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 7px auto;
+    max-width: 1000px;
+}
+
 .content,
 .questionContainer,
 .navBar {
     display: flex;
     flex-direction: column;
-}
-
-.content {
-    width: 90%;
     justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    max-width: 1000px;
 }
 
-/*============== Answers  ============================*/
+
+
+/*==========counter of the number of right and wrong answersd==========*/
+
+#rigthAnsw {
+    color: rgb(7, 190, 7);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+#wrongAnsw {
+    color: #ff4b5c;
+    margin-left: 15px;
+    font-size: 25px;
+}
+/* ===========question style ======================= */
+#questions {
+    color: #595352;
+    margin: 12px 0px;
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.questionContainer {
+    font-family: 'Inconsolata', monospace;
+    color: #66bfbf;
+    margin: 12px 0px;
+    font-size: 15px;
+}
+
+
+/*==============  Answers  ============================*/
 .answers {
     display: flex;
     flex-direction: column;
 }
 
-/* answers div */
-.btn {
+/* =============answers button ====================*/
+
+/* right or wrong display */
+.result {
     font-size: 20px;
-    border: none;
-    border-bottom: 3px solid #CD7A00;
-    padding: 12px 0px;
-    transition: all .3s;
-    margin: 12px 0px;
-    color: rgb(43, 39, 39)
 }
 
-
+.btn {
+    font-size: 17px;
+    border: none;
+    border: 3px solid #595352;
+    padding: 7px 0px;
+    border-radius: 12px;
+    transition: all .3s;
+    margin: 7px 0px;
+    background-color: #e0ece4;
+    color: #595352;
+}
 
 .btn:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
 
-/* right or wrong display */
-.result {
-    font-size: 32px;
-}
-
-/*==========counter of the number of right and wrong answersd==========*/
-#rigthAnsw {
-    color: green;
-    margin-right: 15px;
-}
-
-#wrongAnsw {
-    color: red;
-    margin-left: 15px;
-}
 
 /* generate questions: button */
 #createQuestion {
     outline: none;
-    padding: 10px 44px;
-    font-size: 25px;
-    margin: 12px 0px;
+    padding: 7px 44px;
+    font-size: 23px;
+    margin: 7px 0px;
     border: none;
-    color: black;
+    background-color: #ff4b5c;
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
     transition: all 1.4s;
+    color: #e0ece4;
 }
 
 #createQuestion:hover {
     cursor: pointer;
-    background-color: aqua;
-
+    background-color: #056674;
+    color: #e0ece4;
     transform: skewX(12deg) scale(1.1);
 }
 
 /* this are the classes that I use in my JavaScript */
 .right {
     background-color: green;
-
+    color: white;
 }
 
 .wrong {
     background-color: red;
+    color: white;
 }
 
 .crossClass {
     text-decoration: line-through;
     transition: all 1s;
+    background-color: red;
+    color: white;
 }
 
 /* media Queries */

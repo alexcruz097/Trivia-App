@@ -70,7 +70,7 @@ function createQuestion(url) {
                             result.classList.add("right");
                             result.classList.remove("wrong");
                             //update number of correct answer
-                            numRightAnsw.innerHTML = `Rigth ${rightCounter++}`;
+                            numRightAnsw.innerHTML = `${rightCounter++} Correct`;
                         }
                         else {
                             result.innerHTML = `
@@ -81,7 +81,7 @@ function createQuestion(url) {
                             result.classList.remove("right");
                             result.classList.add("wrong");
                             //update number of wrong answer
-                            numWrongAnsw.innerHTML = `wrong: ${wrongCounter++}`;
+                            numWrongAnsw.innerHTML = `${wrongCounter++} Wrong`;
                         }
                     }
                 })
